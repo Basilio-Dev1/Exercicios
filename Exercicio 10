@@ -1,0 +1,92 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+        var ler = new Scanner(System.in);
+
+
+        System.out.print("Bem vindo a NEWTONBURGUER");
+        System.out.println("Vamos te apresentar nosso cardapio!");
+
+        System.out.println("                  Menu                 ");
+        System.out.println("Hamburguer de frango.................17,90");
+        System.out.println("Hamburguer de Boi....................17,90");
+        System.out.println("Hamburguer de porco..................17,90");
+        System.out.println("COPO de refrigerante 500ml...........17,90");
+        System.out.println("Hamburguer de frango.................17,90");
+
+        do {
+
+            System.out.println("Deseja pedir algo?");
+            String resposta = ler.nextLine();
+
+            if (resposta.contains("frango")) {
+                System.out.println("Que otima escolha, o hamburguer de frango é 17,90! Deseja adicionar algo mais? ");
+                if (resposta.contains("sim")) {
+
+                }
+            }
+
+            if (resposta.contains("boi")) {
+                System.out.println("Que otima escolha, o hamburguer de boi é 17,90! Deseja adicionar algo mais? ");
+                if (resposta.contains("sim")) {
+
+                }
+            }
+
+
+            if (resposta.contains("porco")) {
+                System.out.println("Que otima escolha, o hamburguer de porco é 17,90! Deseja adicionar algo mais? ");
+                if (resposta.contains("sim")) {
+
+
+                }
+            }
+
+            if (resposta.contains("copo")) {
+                System.out.println("Que otima escolha, o copo de refrigerante é 17,90! Deseja adicionar algo mais? ");
+                if (resposta.contains("sim")) {
+
+                }
+            }
+
+            System.out.println("Deseja selecionar algo mais? ");
+            String resposta2 = ler.nextLine();
+
+            if (resposta2.contains("sim")) {
+
+                System.out.println("Que otimo, o que deseja mais? ");
+
+            } else {
+                System.out.println("Irá comer no local ou será entrega?");
+                String opcao4 = ler.nextLine();
+
+                if (opcao4.contains("entrega")) {
+                    System.out.println("A taxa de entregue é de 2,00 mas hoje estamos com entrega gratis!");
+                    System.out.println("Deseja confirmar seu pedido? ");
+                    String resposta3 = ler.nextLine();
+                    if (opcao4.contains("sim")) {
+                        System.out.println("Até aqui sim");
+
+
+                    } else if (opcao4.contains("local")) {
+                        System.out.println("No local você tem dez por cento de desconto. O valor do seu pedido é : 18.00");
+                        System.out.println("Deseja confirmar o pedido? ");
+                        String opcao2 = ler.nextLine();
+                        if (opcao2.contains("sim")) {
+                            pagamento.pagamento();
+                        } else{
+                            System.out.println("Que pena, volte outra hora!");
+                        }
+                        break;
+                     }
+
+                    }
+                }
+                break;
+
+            } while (true);
+
+        }
+    }
