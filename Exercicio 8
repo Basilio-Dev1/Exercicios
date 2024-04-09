@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class VendaCamisetas {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        // Preços das camisetas
+        double precoPequena = 10.00;
+        double precoMedia = 12.00;
+        double precoGrande = 15.00;
+        
+        // Quantidades de camisetas vendidas
+        System.out.println("Digite a quantidade de camisetas pequenas vendidas: ");
+        int qtdPequenas = scanner.nextInt();
+        
+        System.out.println("Digite a quantidade de camisetas médias vendidas: ");
+        int qtdMedias = scanner.nextInt();
+        
+        System.out.println("Digite a quantidade de camisetas grandes vendidas: ");
+        int qtdGrandes = scanner.nextInt();
+        
+        // Calculando o valor arrecadado por tamanho de camiseta
+        double totalPequenas = qtdPequenas * precoPequena;
+        double totalMedias = qtdMedias * precoMedia;
+        double totalGrandes = qtdGrandes * precoGrande;
+        
+        // Calculando o total geral
+        double totalGeral = totalPequenas + totalMedias + totalGrandes;
+        
+        // Exibindo os resultados
+        System.out.println("Valor arrecadado com camisetas pequenas: R$ " + totalPequenas);
+        System.out.
