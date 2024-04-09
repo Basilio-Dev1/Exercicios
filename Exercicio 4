@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class DiasDeVida {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o nome da pessoa: ");
+        String nome = scanner.nextLine();
+        
+        System.out.println("Digite a idade da pessoa: ");
+        int idade = scanner.nextInt();
+        
+        int diasDeVida = idade * 365;
+        
+        System.out.println(nome.toUpperCase() + ", VOCÊ JÁ VIVEU " + diasDeVida + " DIAS.");
+        
+        scanner.close();
+    }
+}
