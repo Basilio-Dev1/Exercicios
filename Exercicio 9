@@ -1,0 +1,10 @@
+public class ConversaoVelocidade {
+    public static void main(String[] args) {
+        double velocidadeMS = 12; // Velocidade em m/s
+        
+        // Convertendo para km/h
+        double velocidadeKMH = velocidadeMS * 3.6;
+        
+        System.out.println("A velocidade de " + velocidadeMS + " m/s é equivalente a " + velocidadeKMH + " km/h.");
+    }
+}
