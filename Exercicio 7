@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class AnosPassados {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o número de dias: ");
+        int dias = scanner.nextInt();
+        
+        int anos = dias / 365;
+        
+        System.out.println("Anos passados: " + anos);
+        
+        scanner.close();
+    }
+}
