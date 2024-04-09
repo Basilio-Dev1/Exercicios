@@ -1,0 +1,10 @@
+public class FerradurasCavalos {
+    public static void main(String[] args) {
+        int numCavalos = 283;
+        int ferradurasPorCavalo = 4; // Cada cavalo tem 4 ferraduras
+        
+        int totalFerraduras = numCavalos * ferradurasPorCavalo;
+        
+        System.out.println("Total de ferraduras necessárias: " + totalFerraduras);
+    }
+}
