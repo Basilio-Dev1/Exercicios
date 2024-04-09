@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class LitrosGasolina {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o preço do litro da gasolina: ");
+        double precoLitro = scanner.nextDouble();
+        
+        System.out.println("Digite o valor do pagamento: ");
+        double valorPagamento = scanner.nextDouble();
+        
+        double litros = valorPagamento / precoLitro;
+        
+        System.out.println("Quantidade de litros de gasolina: " + litros);
+        
+        scanner.close();
+    }
+}
