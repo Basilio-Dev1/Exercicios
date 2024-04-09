@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Restaurante {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite o peso do prato montado pelo cliente (em quilos): ");
+        double pesoPrato = scanner.nextDouble();
+        
+        // Descontando o peso do prato (100 gramas = 0.1 quilos)
+        pesoPrato -= 0.1;
+        
+        double valorTotal = pesoPrato * 65.00;
+        
+        System.out.println("Valor a pagar: R$ " + valorTotal);
+        
+        scanner.close();
+    }
+}
