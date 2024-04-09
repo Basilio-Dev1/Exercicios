@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Padaria {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.println("Digite a quantidade de pães vendidos: ");
+        int qtdPaes = scanner.nextInt();
+        
+        System.out.println("Digite a quantidade de broas vendidas: ");
+        int qtdBroas = scanner.nextInt();
+        
+        double valorPao = 0.12;
+        double valorBroa = 1.50;
+        
+        double totalVendas = (qtdPaes * valorPao) + (qtdBroas * valorBroa);
+        double poupanca = totalVendas * 0.10;
+        
+        System.out.println("Total arrecadado: R$ " + totalVendas);
+        System.out.println("Valor a ser guardado na poupança: R$ " + poupanca);
+        
+        scanner.close();
+    }
+}
