@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class pagamento {
+
+
+
+    public static void main(String[]args){
+
+        pagamento.pagamento();
+
+
+
+
+
+    }
+
+    public static String pagamento(){
+
+
+        var lerP= new Scanner(System.in);
+
+        System.out.println("Qual a forma de pagamento? Aceitamos cartão de debito, pix ou dinheiro");
+        String pagamento = lerP.nextLine();
+        switch (pagamento.toLowerCase()) {
+
+            case "debito":
+                System.out.println("Confirmado, o entregador levará a maquininha");
+                break;
+            case "pix":
+                System.out.println("A chave pix é NEWTONBURGUER@GMAIL.COM");
+                break;
+            case "dinheiro":
+                System.out.println("Peço que deixe o dinheiro preparado");
+                break;
+            default:
+                System.out.println("Opcão não valida");
+
+        }
+
+        return  pagamento;
+    }
+
+}
